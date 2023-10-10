@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar'
+import WeatherInputForm from './components/WeatherInputForm';
+import WeatherCard from './components/WeatherCard';
 
 function App() {
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [selectedCity, setSelectedCity] = useState('');
+
+  const handleFormSubmit = (country, city) => {
+    setSelectedCountry(country);
+    setSelectedCity(city);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <WeatherInputForm onFormSubmit={handleFormSubmit} />
+      {selectedCountry && selectedCity && (
+        <WeatherCard country={selectedCountry} city={selectedCity} />
+      )}
     </div>
   );
 }

@@ -1,0 +1,60 @@
+
+/* WeatherCard.css */
+
+.weather-card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-card img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.weather-card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.weather-card strong {
+  font-weight: bold;
+}
+
+.weather-card h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.weather-card .forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.weather-card .forecast-day {
+  flex-basis: calc(33.33% - 10px); /* 3 columns with spacing */
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.weather-card .forecast-day p {
+  margin: 5px 0;
+}
+
+/* Add more styles as needed */

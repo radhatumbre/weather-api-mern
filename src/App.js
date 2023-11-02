@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar'
-import WeatherInputForm from './components/WeatherInputForm';
-import WeatherCard from './components/WeatherCard';
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import WeatherInputForm from "./components/WeatherInputForm";
+import WeatherCard from "./components/WeatherCard";
 
 function App() {
-  const [selectedCountry, setSelectedCountry] = useState('');
-  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
 
   const handleFormSubmit = (country, city) => {
     setSelectedCountry(country);

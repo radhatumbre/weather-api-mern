@@ -1,13 +1,18 @@
 /* WeatherInputForm.css */
 
 .weather-input {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 1% 2% ;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: rgba(240, 240, 240, 0.7); /* Change the alpha (0.7) to control transparency */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Center the content within the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   }
   
   .weather-input h1 {

@@ -48,6 +48,7 @@ const WeatherCard = ({ country, city }) => {
 document.body.style.backgroundImage = `url(${backgroundImage})`;
 document.body.style.backgroundSize = 'cover';
 document.body.style.backgroundRepeat = 'no-repeat';
+document.body.style.backdropFilter = 'blur(5px)';
 
   return (
     <div
